@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  json转换
+//
+//  Created by 张艳江 on 2017/11/2.
+//  Copyright © 2017年 jinshuaier. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "MyTool.h"
+#import "UILabel+MyLabel.h"
+#import "SDAutoLayout.h"
+
+#define ViewColor [UIColor colorWithRed:242.0 / 255.0 green:242.0 / 255.0 blue:242.0 / 255.0 alpha:1.0]
+#define TCUIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue &0xFF00) >>8))/255.0 blue:((float)(rgbValue &0xFF))/255.0 alpha:1.0]
+// 屏幕适配时需要的宏
+#define WIDHT [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+//比例
+#define WIDHTSCALE  [UIScreen mainScreen].bounds.size.width/375.0
+#define HEIGHTSCALE  [UIScreen mainScreen].bounds.size.height/667.0
+
+#endif /* PrefixHeader_pch */

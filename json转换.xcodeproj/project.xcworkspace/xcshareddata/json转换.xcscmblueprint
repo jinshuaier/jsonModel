@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "eefa302f-ac2c-47db-80a1-35b2191b6bfc++9284",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "eefa302f-ac2c-47db-80a1-35b2191b6bfc++9284" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "eefa302f-ac2c-47db-80a1-35b2191b6bfc++9284" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "742237E1-C05D-42E8-9E61-702944BD4502",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "eefa302f-ac2c-47db-80a1-35b2191b6bfc++9284" : "shundaojia5\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "json转换",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "json转换\/json转换.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "eefa302f-ac2c-47db-80a1-35b2191b6bfc++9284"
+    }
+  ]
+}
