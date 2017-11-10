@@ -36,6 +36,8 @@
         self.address = dictInfo[@"address"][@"address"];
         self.name    = dictInfo[@"address"][@"name"];
         self.mobile  = dictInfo[@"address"][@"mobile"];
+        
+        self.isOpen = NO;
     }
     return self;
 }

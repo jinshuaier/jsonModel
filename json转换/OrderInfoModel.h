@@ -28,6 +28,8 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *mobile;
 
+@property (nonatomic, assign) BOOL isOpen;
+
 
 + (id)orderInfoWithDictionary:(NSDictionary *)dictInfo;
 

@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "OrderInfoModel.h"
+#import "ActiveView.h"
+
+@protocol TCListCellDelegate <NSObject>
+
+- (void)btnClick:(UITableViewCell *)cell;
+
+@end
 
 @interface TCListCell : UITableViewCell
 
@@ -30,6 +37,15 @@
 @property (nonatomic, strong) UILabel *nameLabel; //姓名
 @property (nonatomic, strong) UILabel *deliveryLabel; //送达时间
 @property (nonatomic, strong) UILabel *ordelTimeLabel; //订单时间
+
+@property (nonatomic, assign) BOOL       selectState;
+@property (nonatomic, strong) ActiveView *activeView;
+@property (nonatomic, weak)   id<TCListCellDelegate>delegate;
+
+@property (nonatomic, strong) UILabel *activeLabel; //活动的文字
+@property (nonatomic, strong) UIButton *activeBtn; //活动的按钮
+
+@property (nonatomic, assign) float count; //活动的数量
 
 
 @end

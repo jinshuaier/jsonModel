@@ -13,6 +13,7 @@
 		A9CE8F911FAB4789007CD100 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE8F901FAB4789007CD100 /* UIKit.framework */; };
 		A9CE8FBD1FAB4DF0007CD100 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE8FBA1FAB4DF0007CD100 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		A9CE8FBE1FAB4DF0007CD100 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CE8FBC1FAB4DF0007CD100 /* UIView+SDAutoLayout.m */; };
+		A9FA6B9D1FB45CD400A237F3 /* ActiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA6B9C1FB45CD400A237F3 /* ActiveView.m */; };
 		B9414AF11FAABF00005DB81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9414AF01FAABF00005DB81F /* main.m */; };
 		B9414AF41FAABF00005DB81F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9414AF31FAABF00005DB81F /* AppDelegate.m */; };
 		B9414AF71FAABF00005DB81F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9414AF61FAABF00005DB81F /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		A9CE8FBA1FAB4DF0007CD100 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		A9CE8FBB1FAB4DF0007CD100 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		A9CE8FBC1FAB4DF0007CD100 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		A9FA6B9B1FB45CD400A237F3 /* ActiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveView.h; sourceTree = "<group>"; };
+		A9FA6B9C1FB45CD400A237F3 /* ActiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveView.m; sourceTree = "<group>"; };
 		B9414AEC1FAABF00005DB81F /* json转换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "json转换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9414AF01FAABF00005DB81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9414AF21FAABF00005DB81F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				B9414AF61FAABF00005DB81F /* ViewController.m */,
 				B9414B261FAABFED005DB81F /* TCListCell.h */,
 				B9414B241FAABFE7005DB81F /* TCListCell.m */,
+				A9FA6B9B1FB45CD400A237F3 /* ActiveView.h */,
+				A9FA6B9C1FB45CD400A237F3 /* ActiveView.m */,
 				A94BAD761FAB375E0095A0F0 /* OrderInfoModel.h */,
 				A94BAD771FAB375E0095A0F0 /* OrderInfoModel.m */,
 				B9414AF81FAABF00005DB81F /* Main.storyboard */,
@@ -333,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FA6B9D1FB45CD400A237F3 /* ActiveView.m in Sources */,
 				A9CE8FBE1FAB4DF0007CD100 /* UIView+SDAutoLayout.m in Sources */,
 				B9414B251FAABFE7005DB81F /* TCListCell.m in Sources */,
 				A9CE8F8E1FAB4735007CD100 /* MyTool.m in Sources */,
@@ -496,7 +502,7 @@
 				DEVELOPMENT_TEAM = 69RSQQWP5Y;
 				GCC_PREFIX_HEADER = "json转换/PrefixHeader.pch";
 				INFOPLIST_FILE = "json转换/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hgg.json--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,7 +516,7 @@
 				DEVELOPMENT_TEAM = 69RSQQWP5Y;
 				GCC_PREFIX_HEADER = "json转换/PrefixHeader.pch";
 				INFOPLIST_FILE = "json转换/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hgg.json--";
 				PRODUCT_NAME = "$(TARGET_NAME)";

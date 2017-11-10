@@ -10,7 +10,7 @@
 #import "TCListCell.h"
 #import "OrderInfoModel.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource, TCListCellDelegate>
 
 @property (nonatomic, strong) UITableView    *listTableView;
 @property (nonatomic, strong) NSMutableArray *dataMuArr;
@@ -58,8 +58,14 @@
     self.listTableView.delegate = self;
     self.listTableView.showsVerticalScrollIndicator = NO;
     self.listTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.view addSubview:self.listTableView];
     
+    //ios11解决点击刷新跳转的问题
+    self.listTableView.estimatedRowHeight = 0;
+    self.listTableView.estimatedSectionHeaderHeight = 0;
+    self.listTableView.estimatedSectionFooterHeight = 0;
+    
+    [self.view addSubview:self.listTableView];
+   
     self.listTableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 10)];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -68,6 +74,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
     return [self.listTableView cellHeightForIndexPath:indexPath model:self.dataMuArr[indexPath.row] keyPath:@"model" cellClass:[TCListCell class] contentViewWidth:[MyTool cellContentViewWith]];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -75,7 +82,21 @@
     TCListCell *cell = [[TCListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.model = self.dataMuArr[indexPath.row];
+    
+    if (cell.count < 3){
+        NSLog(@"不刷新");
+    } else {
+        cell.delegate = self;
+    }
     return cell;
+}
+
+- (void)btnClick:(UITableViewCell *)cell{
+
+    NSIndexPath *indexPath = [self.listTableView indexPathForCell:cell];
+    NSArray *indexPathAry = @[indexPath];
+    [self.listTableView reloadRowsAtIndexPaths:indexPathAry withRowAnimation:UITableViewRowAnimationAutomatic];
+    //NSLog(@"刷新单个的一行了");
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

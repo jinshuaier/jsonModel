@@ -3,6 +3,7 @@
     "retMessage": "已返回数据！",
     "data": [
              {
+              "activity": [],
              "id": "27587",
              "mid": "4625",
              "ordersn": "2017122103027587",
@@ -23,6 +24,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27587.png"
              },
              {
+             "activity": [],
              "id": "27586",
              "mid": "4625",
              "ordersn": "2017122103027586",
@@ -43,6 +45,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27586.png"
              },
              {
+             "activity": [],
              "id": "27564",
              "mid": "4625",
              "ordersn": "2017122103027564",
@@ -63,6 +66,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27564.png"
              },
              {
+             "activity": [],
              "id": "27563",
              "mid": "4625",
              "ordersn": "2017122103027563",
@@ -83,6 +87,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27563.png"
              },
              {
+             "activity": [],
              "id": "27558",
              "mid": "4625",
              "ordersn": "2017122103027558",
@@ -103,6 +108,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27558.png"
              },
              {
+             "activity": [],
              "id": "27550",
              "mid": "4625",
              "ordersn": "2017122103027550",
@@ -123,6 +129,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27550.png"
              },
              {
+             "activity": [],
              "id": "27531",
              "mid": "4625",
              "ordersn": "2017122103027531",
@@ -143,6 +150,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27531.png"
              },
              {
+             "activity": [],
              "id": "27528",
              "mid": "24654",
              "ordersn": "2017122103027528",
@@ -163,6 +171,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/27528.png"
              },
              {
+             "activity": [],
              "id": "26743",
              "mid": "24179",
              "ordersn": "2017122091226743",
@@ -183,6 +192,7 @@
              "qrcode": "http://img.moumou001.com/shop/122/orderQrcode/20171102/26743.png"
              },
              {
+             "activity": [],
              "id": "24142",
              "mid": "4625",
              "ordersn": "2017298060924142",
